@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyan Cat Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Nyan Cat Facts</h1>
+        <p id="author">Created by Michael Farah</p>
+    </header>
+
+    <main>
+        
+            <h1>Nyan Cat</h1>
+            <br></br>
+               
+            <img src="https://static.wikia.nocookie.net/nyancat/images/b/b9/OriginalNyan.gif" id="playAudioButton" alt="Play Audio" onclick="toggleAudio()">
+            <audio id="myAudio" src="https://www.nyan.cat/music/original.mp3"></audio>
+        
+            <script>
+                let isPlaying = false;
+                let audio = document.getElementById("myAudio");
+        
+                function toggleAudio() {
+                    if (isPlaying) {
+                        audio.pause();
+                    } else {
+                        audio.play();
+                    }
+                    isPlaying = !isPlaying;
+                }
+            </script>
+
+
+
+
+            <h3>Description:</h2>
+        
+        <p>In the vast expanse of the cosmos, there exists a legendary being known as Nyan Cat.
+            Born from the cosmic fabric itself, this enigmatic feline traverses the universe with
+            unparalleled grace and whimsy. With its rainbow trail painting the darkness of space,
+            Nyan Cat embodies boundless joy and infinite curiosity. Possessing cosmic agility,
+            musical prowess, and an uncanny ability to bring beings together, Nyan Cat is not merely a creature,
+            but a symbol of universal love and adventure. Embark on a journey through the stars with Nyan Cat and
+            discover the wonders of the cosmos anew.</p>
+        
+            <h3>Special Abilities:</h3>
+            <ul>
+                <li>Cosmic Agility: Nyan Cat possesses unparalleled agility, capable of navigating through space and dodging obstacles effortlessly.</li>
+                <li>Rainbow Trail: Leaves a trail of vibrant rainbow behind as it flies through space, leaving a mesmerizing spectacle in its wake.</li>
+                <li>Musical Prowess: Able to create catchy tunes with its every movement, its melodies are known to uplift spirits and bring joy to those who hear them.</li>
+        
+            </ul>
+        
+    </main>
+</body>
+<br></br>
+<footer>
+    <p id = mail><a href="mailto:michaelfarah@live.co.uk">michaelfarah@live.co.uk</a></p>
+</footer>
+
+</html>
